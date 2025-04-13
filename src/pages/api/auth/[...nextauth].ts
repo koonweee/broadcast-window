@@ -1,7 +1,7 @@
 import NextAuth, { Account, Profile } from "next-auth"
 import Google, { GoogleProfile } from "next-auth/providers/google"
 
-const whitelistedEmails = process.env.WHITELISTED_EMAILS?.split(',') || []
+const whitelistedEmails = process.env.NEXT_WHITELISTED_EMAILS?.split(',') || []
 
 export const authOptions = {
   // Configure one or more authentication providers
