@@ -54,7 +54,7 @@ function Player({ setPeerConnectionDisconnected }: PlayerProps) {
       offer.sdp = offer.sdp?.replace("useinbandfec=1", "useinbandfec=1;stereo=1") || '';
       peerConnection.setLocalDescription(offer);
 
-      const apiPath = process.env.NEXT_PUBLIC_API_PATH;
+      const apiPath = process.env.NEXT_PUBLIC_API_HOSTNAME;
       if (!apiPath) {
         console.error('API path not configured');
         return;
