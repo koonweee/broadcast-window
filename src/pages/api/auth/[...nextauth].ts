@@ -11,6 +11,7 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!, // TODO: Add client secret
     }),
   ],
+  secret: process.env.NEXT_AUTH_SECRET!,
   callbacks: {
     // Only allow certain emails
     async signIn({ account, profile }: { account: Account | null; profile?: Profile }) {
