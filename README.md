@@ -30,7 +30,7 @@ npm install
    - Fill in the required values:
      - `GOOGLE_CLIENT_ID`: Your Google OAuth client ID
      - `GOOGLE_CLIENT_SECRET`: Your Google OAuth client secret
-     - `NEXT_PUBLIC_API_HOSTNAME`: Hostname of your broadcast-box instance (e.g., `http://localhost:8080`)
+     - `NEXT_PUBLIC_API_ROUTE`: Hostname of your broadcast-box instance (e.g., `http://localhost:8080`)
      - `NEXT_PUBLIC_STREAM_KEY`: The stream key configured in your streaming software
      - `NEXT_WHITELISTED_EMAILS`: Comma-separated list of email addresses allowed to access the application
      - `NEXTAUTH_SECRET`: A random string used to hash tokens and sign cookies (generate using `openssl rand -base64 32`)
